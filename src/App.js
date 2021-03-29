@@ -1,14 +1,16 @@
 import React from 'react';
-import './App.css';
-import Footer from './components/Nav';
+import Footer from './components/Footer';
+import GlobalStyles from './styles/GlobalStyles';
+import Filterusers from './utils/Filterusers';
+import 'normalize.css';
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello World</p>
-      </header>
+    <>
+      <GlobalStyles />
+      <p>Hello World</p>
+      <Filterusers />
       <Footer />
-    </div>
+    </>
   );
 }
