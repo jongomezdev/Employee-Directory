@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TableStyle = styled.div`
+const TableStyle = styled.div`
   table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -24,8 +24,10 @@ export const TableStyle = styled.div`
   table th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     background-color: #4caf50;
     color: white;
   }
 `;
+
+export default TableStyle;

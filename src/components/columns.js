@@ -1,23 +1,23 @@
-export const COLUMNS = [
+export const Columns = [
   {
     Header: 'Avatar',
-    accessor: 'thumbnail',
+    accessor: 'results[0].picture.thumbnail',
   },
   {
     Header: 'Full Name',
-    accessor: 'name',
+    accessor: 'results[0].name.first  results[0].name.last',
   },
   {
     Header: 'Location',
-    accessor: 'state',
+    accessor: 'results[0].location.state',
   },
   {
     Header: 'Email',
-    accessor: 'email',
+    accessor: 'results[0].email',
   },
   {
     Header: 'Phone',
-    accessor: 'cell',
+    accessor: 'results[0].cell',
   },
 ];
 
