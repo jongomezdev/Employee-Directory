@@ -1,18 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+// import Table from './components/Table';
 
 const Data = () => {
-  // const [userState, setUserState] = useState([]);
+  const [userState, setUserState] = useState([]);
   // const [query, setQuery] = useState('');
 
   useEffect(() => {
-    (async () => {
+    const getUserData = async () => {
       const res = await axios('https://randomuser.me/api/?results=500&nat=us');
-      // setUserState(res.data.results);
-      console.log(res.data);
-    })();
+      setUserState(res.data.results);
+    };
+    getUserData();
   }, []);
-  return <div>yer</div>;
+  console.log(userState);
+  return (
+    <>
+      yer
+      {/* <Table /> */}
+    </>
+  );
 };
 
 export default Data;

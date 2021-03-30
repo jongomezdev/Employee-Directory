@@ -1,11 +1,11 @@
 // import React, { useMemo } from 'react';
 // import { useTable } from 'react-table';
 // import TableStyle from '../styles/table';
-// import { Data } from './Data';
-// import Columns from './Columns';
+// import Data from './Data';
+// import { COLUMNS } from './columns';
 
-// export default function Table({ columns, data }) {
-//   const Columns = useMemo(() => columns, []);
+// function Table() {
+//   const columns = useMemo(() => COLUMNS, []);
 //   const data = useMemo(() => Data, []);
 //   const tableInstance = useTable({
 //     columns,
@@ -50,3 +50,5 @@
 //     </TableStyle>
 //   );
 // }
+
+// export default Table;
