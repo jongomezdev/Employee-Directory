@@ -4,7 +4,7 @@ import Table from '../components/Table';
 
 const Data = () => {
   const [users, setUsers] = useState([]);
-  // const [query, setQuery] = useState('');
+  const [query, setQuery] = useState([]);
 
   useEffect(() => {
     const getUserData = async () => {
@@ -15,9 +15,22 @@ const Data = () => {
     };
     getUserData();
   }, []);
+
+  function search(props) {
+    return props.filter((prop) => prop.name.first.toLowerCase().indexOf(query));
+  }
+
   return (
     <>
-      <Table data={users} />
+      <div>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <button></button>
+      </div>
+      <Table data={search(users)} />
     </>
   );
 };

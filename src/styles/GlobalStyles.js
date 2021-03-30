@@ -35,7 +35,7 @@ body {
 h1 {
   font-size: 3rem;
   padding-top: 10rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 }
 
 img {
