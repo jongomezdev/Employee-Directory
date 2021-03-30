@@ -1,54 +1,35 @@
-// import React, { useMemo } from 'react';
-// import { useTable } from 'react-table';
-// import TableStyle from '../styles/table';
-// import Data from './Data';
-// import { COLUMNS } from './columns';
+import React from 'react';
 
-// function Table() {
-//   const columns = useMemo(() => COLUMNS, []);
-//   const data = useMemo(() => Data, []);
-//   const tableInstance = useTable({
-//     columns,
-//     data,
-//   });
-
-//   const {
-//     getTableProps,
-//     getTableBodyProps,
-//     headerGroups,
-//     rows,
-//     prepareRow,
-//   } = tableInstance;
-
-//   return (
-//     <TableStyle>
-//       <table {...getTableProps()}>
-//         <thead>
-//           {headerGroups.map((headerGroup) => (
-//             <tr {...headerGroup.getHeaderGroupProps()}>
-//               {headerGroup.headers.map((column) => (
-//                 <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-//               ))}
-//             </tr>
-//           ))}
-//         </thead>
-//         <tbody {...getTableBodyProps()}>
-//           {rows.map((row, i) => {
-//             prepareRow(row);
-//             return (
-//               <tr {...row.getRowProps()}>
-//                 {row.cells.map((cell) => {
-//                   return (
-//                     <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-//                   );
-//                 })}
-//               </tr>
-//             );
-//           })}
-//         </tbody>
-//       </table>
-//     </TableStyle>
-//   );
-// }
-
-// export default Table;
+export default function Table(props) {
+  return (
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
