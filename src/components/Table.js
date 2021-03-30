@@ -14,9 +14,11 @@ export default function Table(props) {
           </tr>
         </thead>
 
-        {/* {props.user.map((emp) => {
-          <li>{emp.name.first}</li>;
-        })} */}
+        {props.data.map((user) => (
+          <li>
+            {user.name.first} {user.name.last}
+          </li>
+        ))}
 
         <tbody>
           <tr>

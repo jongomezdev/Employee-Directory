@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-// import Table from './components/Table';
+import Table from '../components/Table';
 
 const Data = () => {
   const [users, setUsers] = useState([]);
@@ -16,11 +16,9 @@ const Data = () => {
     getUserData();
   }, []);
   return (
-    <ul>
-      {users.map((user) => (
-        <li>{user.name.first}</li>
-      ))}
-    </ul>
+    <>
+      <Table data={users} />
+    </>
   );
 };
 
