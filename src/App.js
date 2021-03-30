@@ -1,5 +1,5 @@
 import React from 'react';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import GlobalStyles from './styles/GlobalStyles';
 // import Filterusers from './utils/Filterusers';
 import 'normalize.css';
@@ -13,7 +13,7 @@ export default function App() {
       <Data />
       {/* <Table /> */}
       {/* <Filterusers /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

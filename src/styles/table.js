@@ -25,7 +25,7 @@ const TableStyle = styled.div`
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #4caf50;
+    background-color: #3e00b3;
     color: white;
   }
 `;
