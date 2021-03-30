@@ -15,9 +15,22 @@ const Data = () => {
     getUserData();
   }, []);
 
+  function sortByName() {
+    const sorted = users.sort((a, b) => {
+      if (a.name.first < b.name.first) {
+        return -1;
+      } else if (a.name.first > b.name.first) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    setUsers([...sorted]);
+  }
+
   return (
     <>
-      <Table data={users} />
+      <Table data={users} sortByName={sortByName} />
     </>
   );
 };

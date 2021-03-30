@@ -4,8 +4,6 @@ const GlobalStyles = createGlobalStyle`
 
 :root {
     --blue: #190087;
-    --black: #2E2E2E;
-    --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
   }
@@ -17,8 +15,14 @@ body {
 
 button {
   margin-left: 1rem;
+  border: none;
   background: transparent;
-  color: #fff;
+  color: var(--white);
+}
+
+button:hover {
+  background-color: var(--grey);
+  color: #3e00b3;
 }
 
  /* Scrollbar Styles */
