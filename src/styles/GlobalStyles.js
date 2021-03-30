@@ -13,7 +13,6 @@ const GlobalStyles = createGlobalStyle`
 body {
   font-size: 1.5rem;
   text-align: center;
-  
 }
 
  /* Scrollbar Styles */
@@ -32,6 +31,18 @@ body {
     border-radius: 6px;
     border: 3px solid var(--white);
   }
+
+h1 {
+  font-size: 3rem;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+}
+
+img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+
+}
 
 `;
 

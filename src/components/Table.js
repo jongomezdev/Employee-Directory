@@ -5,7 +5,7 @@ import TableStyle from '../styles/table';
 export default function Table(props) {
   return (
     <TableStyle>
-      <table class="table">
+      <table className="table">
         <thead>
           <tr>
             <th scope="col"></th>
@@ -18,7 +18,7 @@ export default function Table(props) {
 
         <tbody>
           {props.data.map((user) => (
-            <tr>
+            <tr key={user.login.uuid}>
               <th scope="row">
                 <img src={user.picture.thumbnail} alt={user.name.first} />
               </th>

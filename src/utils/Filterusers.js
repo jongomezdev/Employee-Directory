@@ -1,7 +1,7 @@
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 
-// // Function to filter users by Gender
+//
 // export default function Filterusers() {
 //   const [user, setUser] = useState('');
 //   useEffect(() => {
