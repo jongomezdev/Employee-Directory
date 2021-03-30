@@ -33,8 +33,8 @@ An employee database that allows coworkers to view contact info for the entire o
 
 ## Links
 
-- [Github](https://github.com/jongomezdev/Hardware-wallet)
-- [Live Heroku App](https://hardware-wallet.herokuapp.com/)
+- [Github](https://github.com/jongomezdev/Employee-Directory)
+- [Live Heroku App](https://jg-employee-directory.herokuapp.com/)
 
 ## Technologies
 

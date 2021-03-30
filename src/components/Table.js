@@ -1,6 +1,5 @@
 import React from 'react';
 import TableStyle from '../styles/table';
-// import Parent from '../components/Parent';
 
 export default function Table(props) {
   return (
