@@ -1,6 +1,6 @@
 import React from 'react';
 // import Footer from './components/Footer';
-// import GlobalStyles from './styles/GlobalStyles';
+import GlobalStyles from './styles/GlobalStyles';
 // import Filterusers from './utils/Filterusers';
 import 'normalize.css';
 import Data from './components/Data';
@@ -9,8 +9,8 @@ import Data from './components/Data';
 export default function App() {
   return (
     <>
+      <GlobalStyles />
       <Data />
-      {/* <GlobalStyles /> */}
       {/* <Table /> */}
       {/* <Filterusers /> */}
       {/* <Footer /> */}

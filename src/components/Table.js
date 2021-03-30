@@ -1,45 +1,37 @@
 import React from 'react';
-import Parent from '../components/Parent';
+import TableStyle from '../styles/table';
+// import Parent from '../components/Parent';
 
 export default function Table(props) {
   return (
-    <Parent>
+    <TableStyle>
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col"></th>
+            <th scope="col">First, Last</th>
+            <th scope="col">Location</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
           </tr>
         </thead>
 
-        {props.data.map((user) => (
-          <li>
-            {user.name.first} {user.name.last}
-          </li>
-        ))}
-
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          {props.data.map((user) => (
+            <tr>
+              <th scope="row">
+                <img src={user.picture.thumbnail} alt={user.name.first} />
+              </th>
+              <td>
+                {user.name.first} {user.name.last}
+              </td>
+              <td>{user.location.state}</td>
+              <td>{user.email}</td>
+              <td>{user.cell}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
-    </Parent>
+    </TableStyle>
   );
 }
