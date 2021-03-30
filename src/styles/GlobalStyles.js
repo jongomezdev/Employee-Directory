@@ -15,6 +15,12 @@ body {
   text-align: center;
 }
 
+button {
+  margin-left: 1rem;
+  background: transparent;
+  color: #fff;
+}
+
  /* Scrollbar Styles */
  body::-webkit-scrollbar {
     width: 20px;
@@ -42,6 +48,11 @@ img {
   border-radius: 50%;
   border: 4px solid #fff;
 
+}
+
+.header {
+  background-color: #3e00b3;
+  color: #fff;
 }
 
 `;

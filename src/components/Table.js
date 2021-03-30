@@ -9,7 +9,12 @@ export default function Table(props) {
         <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">First, Last</th>
+            <th scope="col">
+              First, Last{' '}
+              <button>
+                <i class="fas fa-sort-alpha-down"></i>
+              </button>
+            </th>
             <th scope="col">Location</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
