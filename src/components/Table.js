@@ -11,7 +11,7 @@ export default function Table(props) {
             <th scope="col">
               First, Last{' '}
               <button onClick={props.sortByName}>
-                <i class="fas fa-sort-alpha-down"></i>
+                <i className="fas fa-sort-alpha-down"></i>
               </button>
             </th>
             <th scope="col">Location</th>
